@@ -1,0 +1,79 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px -6px 25px #c2c2c2;
+   
+
+    &__logo{
+        svg{
+            width: 35px;
+            height: 35px;
+            display: inline-block;
+        }
+    }
+
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 70px;
+
+        &__icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: relative;
+            
+            svg{
+                display: inline-block;
+                width: 25px;
+                height: 25px;
+
+                circle , path{
+                    stroke: #5e5e5e;
+                }
+            }
+
+            span{
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #ff5d5d;
+                font-size: 12px;
+                font-weight: bold;
+                color: white;
+                position: absolute;
+                top: -5px;
+                left: 15px;
+            }
+        }
+
+        &__menu{
+            cursor: pointer;
+
+            svg{
+                width: 25px;
+                height: 25px;
+                display: inline-block;
+                opacity: 1;
+                transition: all .35s ease;
+
+                path{
+                    fill: #5e5e5e;
+                }
+            }    
+
+            &:hover{
+                svg{
+                    opacity: .7;
+                }
+            }
+        }
+    }
+}
